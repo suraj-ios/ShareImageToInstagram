@@ -13,9 +13,14 @@
 		440A91A721BBB29100F2035D /* ShareImageToInstagram.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 440A91A521BBB29100F2035D /* ShareImageToInstagram.xcdatamodeld */; };
 		440A91A921BBB29300F2035D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 440A91A821BBB29300F2035D /* Assets.xcassets */; };
 		440A91AC21BBB29300F2035D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 440A91AA21BBB29300F2035D /* LaunchScreen.storyboard */; };
+		440A91B421BBB35000F2035D /* ShareImageInstagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440A91B321BBB35000F2035D /* ShareImageInstagram.swift */; };
+		440A91B621BBB94A00F2035D /* InstagramManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440A91B521BBB94A00F2035D /* InstagramManager.swift */; };
+		E8B0743E7B9C32FB1FBCE04F /* Pods_ShareImageToInstagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19CDFF0E6768C7478B58636B /* Pods_ShareImageToInstagram.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		149B30117D7A80B38BB3A12B /* Pods-ShareImageToInstagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareImageToInstagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShareImageToInstagram/Pods-ShareImageToInstagram.release.xcconfig"; sourceTree = "<group>"; };
+		19CDFF0E6768C7478B58636B /* Pods_ShareImageToInstagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShareImageToInstagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		440A919B21BBB29100F2035D /* ShareImageToInstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareImageToInstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		440A919E21BBB29100F2035D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		440A91A021BBB29100F2035D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +29,9 @@
 		440A91A821BBB29300F2035D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		440A91AB21BBB29300F2035D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		440A91AD21BBB29300F2035D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		440A91B321BBB35000F2035D /* ShareImageInstagram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareImageInstagram.swift; sourceTree = "<group>"; };
+		440A91B521BBB94A00F2035D /* InstagramManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramManager.swift; sourceTree = "<group>"; };
+		B4023AAFB6B01740257616B8 /* Pods-ShareImageToInstagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareImageToInstagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShareImageToInstagram/Pods-ShareImageToInstagram.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8B0743E7B9C32FB1FBCE04F /* Pods_ShareImageToInstagram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27FD40F8366272CD49AF6E34 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19CDFF0E6768C7478B58636B /* Pods_ShareImageToInstagram.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		440A919221BBB29100F2035D = {
 			isa = PBXGroup;
 			children = (
 				440A919D21BBB29100F2035D /* ShareImageToInstagram */,
 				440A919C21BBB29100F2035D /* Products */,
+				C37F211D0EB1C169D983F5E7 /* Pods */,
+				27FD40F8366272CD49AF6E34 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +82,19 @@
 				440A91AA21BBB29300F2035D /* LaunchScreen.storyboard */,
 				440A91AD21BBB29300F2035D /* Info.plist */,
 				440A91A521BBB29100F2035D /* ShareImageToInstagram.xcdatamodeld */,
+				440A91B321BBB35000F2035D /* ShareImageInstagram.swift */,
+				440A91B521BBB94A00F2035D /* InstagramManager.swift */,
 			);
 			path = ShareImageToInstagram;
+			sourceTree = "<group>";
+		};
+		C37F211D0EB1C169D983F5E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B4023AAFB6B01740257616B8 /* Pods-ShareImageToInstagram.debug.xcconfig */,
+				149B30117D7A80B38BB3A12B /* Pods-ShareImageToInstagram.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 440A91B021BBB29300F2035D /* Build configuration list for PBXNativeTarget "ShareImageToInstagram" */;
 			buildPhases = (
+				B8E435874B326E9D179E4801 /* [CP] Check Pods Manifest.lock */,
 				440A919721BBB29100F2035D /* Sources */,
 				440A919821BBB29100F2035D /* Frameworks */,
 				440A919921BBB29100F2035D /* Resources */,
+				C76A55E46C4AAB2A633FB41B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,11 +165,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B8E435874B326E9D179E4801 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShareImageToInstagram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C76A55E46C4AAB2A633FB41B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ShareImageToInstagram/Pods-ShareImageToInstagram-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/InstagramKit/InstagramKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InstagramKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShareImageToInstagram/Pods-ShareImageToInstagram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		440A919721BBB29100F2035D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				440A91B421BBB35000F2035D /* ShareImageInstagram.swift in Sources */,
+				440A91B621BBB94A00F2035D /* InstagramManager.swift in Sources */,
 				440A91A121BBB29100F2035D /* ViewController.swift in Sources */,
 				440A919F21BBB29100F2035D /* AppDelegate.swift in Sources */,
 				440A91A721BBB29100F2035D /* ShareImageToInstagram.xcdatamodeld in Sources */,
@@ -284,16 +359,19 @@
 		};
 		440A91B121BBB29300F2035D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4023AAFB6B01740257616B8 /* Pods-ShareImageToInstagram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = A2664VY9ZR;
 				INFOPLIST_FILE = ShareImageToInstagram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.navsoft.pushNotification.ShareImageToInstagram;
+				PRODUCT_BUNDLE_IDENTIFIER = com.navsoft.pushNotification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = ZeilikDev;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -301,16 +379,19 @@
 		};
 		440A91B221BBB29300F2035D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 149B30117D7A80B38BB3A12B /* Pods-ShareImageToInstagram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ShareImageToInstagram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.navsoft.pushNotification.ShareImageToInstagram;
+				PRODUCT_BUNDLE_IDENTIFIER = com.navsoft.pushNotification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
